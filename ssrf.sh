@@ -51,7 +51,7 @@ echo -e "\nChecking for Live Urls \e[31m[LIST]\e[0m"
 cp $output_directory/$domain/$domain.urls_with_params.txt ./Drishti/
 mv ./Drishti/$domain.urls_with_params.txt ./Drishti/raw_urls.txt
 cd ./Drishti
-python3 drishti.py
+python3.8 drishti.py
 cd ..
 cp ./Drishti/Results-200.txt $output_directory/$domain/
 rm ./Drishti/raw_urls.txt
